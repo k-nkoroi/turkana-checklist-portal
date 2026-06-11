@@ -424,7 +424,7 @@ with hdr_right:
         data=csv_bytes,
         file_name="nmk_turkana_filtered.csv",
         mime="text/csv",
-        use_container_width=True,
+        width='stretch',
     )
 
 # Record count tag
@@ -437,7 +437,7 @@ st.markdown(
 # Render dataframe
 st.dataframe(
     df_display,
-    use_container_width=True,
+    width='stretch',
     height=520,
     hide_index=True,
     column_config={
@@ -458,7 +458,7 @@ st.markdown(
     f'<p style="font-size:0.68rem;letter-spacing:0.1em;color:{BRAND["ivory_dim"]};'
     f'text-align:center;text-transform:uppercase;">'
     f'National Museums of Kenya · Palaeontology Department · '
-    f'Turkana Basin Fossil Checklist · Proof of Concept Portal'
+    f'Turkana Basin Fossil Checklist ·'
     f'</p>',
     unsafe_allow_html=True,
 )
