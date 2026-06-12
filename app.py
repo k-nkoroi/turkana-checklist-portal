@@ -591,31 +591,7 @@ if not map_df.empty:
         unsafe_allow_html=True
     )
 
-    # Compact legend
-    leg_cols = st.columns(3)
-    with leg_cols[0]:
-        st.markdown(
-            f'<span style="display:inline-block;width:12px;height:12px;border-radius:50%;'
-            f'background:{BRAND["sienna"]};margin-right:6px;"></span>'
-            f'<span style="font-size:0.72rem;color:{BRAND["ivory_dim"]};'
-            f'letter-spacing:0.07em;">Fossil recovery site</span>',
-            unsafe_allow_html=True,
-        )
-    with leg_cols[1]:
-        st.markdown(
-            f'<span style="font-size:0.72rem;color:{BRAND["ivory_dim"]};'
-            f'letter-spacing:0.07em;">Bubble size ∝ √(specimen count)</span>',
-            unsafe_allow_html=True,
-        )
-    with leg_cols[2]:
-        st.markdown(
-            f'<span style="font-size:0.72rem;color:{BRAND["ivory_dim"]};'
-            f'letter-spacing:0.07em;">Labels = top 15 sites by count</span>',
-            unsafe_allow_html=True,
-        )
 
-else:
-    st.info("Adjust your filters to see sites on the map.")
 
 st.markdown('<div class="nmk-gold-rule"></div>', unsafe_allow_html=True)
 
@@ -675,7 +651,7 @@ st.markdown(
     f'<p style="font-size:0.68rem;letter-spacing:0.1em;color:{BRAND["ivory_dim"]};'
     f'text-align:center;text-transform:uppercase;">'
     f'National Museums of Kenya · Palaeontology Department · '
-    f'Turkana Basin Fossil Checklist · Proof of Concept Portal'
+    f'Turkana Basin Fossil Checklist ·'
     f'</p>',
     unsafe_allow_html=True,
 )
